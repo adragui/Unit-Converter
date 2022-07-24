@@ -12,7 +12,7 @@ const inputContainer = document.getElementById("input-container")
 convertBtn.addEventListener("click", function() {
     if (inputNum.value > 0) {
         resultContainer.style.display = "flex";
-        inputContainer.style.borderRadius = "5px 0px";
+        inputContainer.style.borderRadius = "5px 5px 0px 0px";
         let feet = (inputNum.value * 3.281).toFixed(3)
         let meters = (inputNum.value / 3.281).toFixed(3)
         let gallons = (inputNum.value * 0.264).toFixed(3)
