@@ -18,7 +18,7 @@ input[type=number] {
 
 .container {
     /* max-width: 550px; */
-    width: min(550px, 85%);
+    width: min(550px, 90%);
     max-height: 729px;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ input {
 }
 
 .show-result {
-    width: min(500px,80%);
+    width: min(500px,85%);
     background-color: #FFFFFF;
     text-align: center;
     margin-bottom: 23.43px;
