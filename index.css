@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
+:root {
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-low:
+    0.1px 0.1px 0.2px hsl(var(--shadow-color) / 0.51),
+    0.5px 0.5px 0.8px -2.5px hsl(var(--shadow-color) / 0.51);
+  --shadow-elevation-medium:
+    0.1px 0.1px 0.2px hsl(var(--shadow-color) / 0.48),
+    0.6px 0.7px 1px -1.2px hsl(var(--shadow-color) / 0.48),
+    2.4px 2.5px 3.9px -2.5px hsl(var(--shadow-color) / 0.48);
+  --shadow-elevation-high:
+    0.1px 0.1px 0.2px hsl(var(--shadow-color) / 0.44),
+    0.9px 1px 1.5px -0.5px hsl(var(--shadow-color) / 0.44),
+    2px 2.1px 3.3px -1px hsl(var(--shadow-color) / 0.44),
+    3.8px 3.9px 6.1px -1.5px hsl(var(--shadow-color) / 0.44),
+    7px 7.3px 11.4px -2px hsl(var(--shadow-color) / 0.44),
+    12.1px 12.6px 19.7px -2.5px hsl(var(--shadow-color) / 0.44);
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -19,7 +37,7 @@ input[type=number] {
 .container {
     /* max-width: 550px; */
     width: min(550px, 90%);
-    max-height: 729px;
+    /* max-height: 729px; */
     display: flex;
     flex-direction: column;
     margin: 30px auto;
@@ -34,6 +52,7 @@ input[type=number] {
     align-items: center;
     border-radius: 5px;
     text-align: center;
+    box-shadow: var(--shadow-elevation-high);
 }
 
 h1 {
@@ -78,6 +97,7 @@ input {
     display: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    box-shadow: var(--shadow-elevation-high);
 }
 
 .show-result {
